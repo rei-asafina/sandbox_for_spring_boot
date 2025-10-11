@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import Home from "./views/Home.vue";
+import Lifecycle from "./components/Lifecycle.vue";
 </script>
-
 <template>
-  <Home />
+  <div class="app">
+    <main class="view">
+      <RouterView />
+    </main>
+  </div>
 </template>
 
 <style>

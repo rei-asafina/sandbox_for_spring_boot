@@ -1,20 +1,13 @@
-<script setup lang="ts">
-import { useHelloStore } from "../stores/hello";
-const hello = useHelloStore();
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div style="padding: 16px">
-    <h1>Demo</h1>
-    <button @click="hello.fetchHello()" :disabled="hello.loading">
-      {{ hello.loading ? "Loading..." : "Hello World を取得" }}
-    </button>
-
-    <p v-if="hello.message" style="margin-top: 12px">
-      API結果: {{ hello.message }}
-    </p>
-    <p v-if="hello.error" style="margin-top: 12px; color: crimson">
-      Error: {{ hello.error }}
-    </p>
+    <h1>HOME</h1>
+    <nav>
+      <RouterLink to="/api">API sample</RouterLink>
+      <br />
+      <RouterLink to="/lifecycle">Lifecycle</RouterLink>
+      <br />
+    </nav>
   </div>
 </template>
