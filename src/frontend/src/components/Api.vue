@@ -9,7 +9,15 @@ const hello = useHelloStore();
     <button @click="hello.fetchHello()" :disabled="hello.loading">
       {{ hello.loading ? "Loading..." : "Hello World を取得" }}
     </button>
-
+    <br />
+    <button
+      @click="
+        // hello.fetchHello();
+        console.log(hello.message)
+      "
+    >
+      ボタンを押した時に、console.log(userStore.name); でログを出す
+    </button>
     <p v-if="hello.message" style="margin-top: 12px">
       API結果: {{ hello.message }}
     </p>

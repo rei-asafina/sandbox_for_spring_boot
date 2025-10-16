@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import Home from "./views/Home.vue";
-import Lifecycle from "./components/Lifecycle.vue";
-</script>
+<script setup lang="ts"></script>
 <template>
   <div class="app">
     <main class="view">
