@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { useHelloStore } from "../stores/hello";
-const hello = useHelloStore();
-</script>
-
 <template>
   <div style="padding: 16px">
     <h1>API Demo</h1>
@@ -26,3 +21,8 @@ const hello = useHelloStore();
     </p>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useHelloStore } from "../stores/hello";
+const hello = useHelloStore();
+</script>

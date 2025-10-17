@@ -8,6 +8,8 @@
       <br />
       <RouterLink to="/lifecycle">Lifecycle</RouterLink>
       <br />
+      <RouterLink to="/annotation">Annotation</RouterLink>
+      <br />
     </nav>
   </div>
 </template>
